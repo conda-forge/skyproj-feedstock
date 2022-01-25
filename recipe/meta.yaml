@@ -1,6 +1,6 @@
 {% set name = "skyproj" %}
-{% set version = "0.2.2" %}
-{% set sha256 = "48b63f59cffe2b2a0944e57c935373fb12d0433361991d30152949927a2d7cc6" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "503015a6e2a6e548d185450b01bad3469e9a18f3ce0e9e85902a1dd5af12728d" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - pip
     - setuptools
     - python >=3.7
