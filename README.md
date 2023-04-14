@@ -1,11 +1,11 @@
-About skyproj
-=============
+About skyproj-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skyproj-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lsstdesc/skyproj
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skyproj-feedstock/blob/main/LICENSE.txt)
 
 Summary: Sky mapping with matplotlib and PROJ
 
