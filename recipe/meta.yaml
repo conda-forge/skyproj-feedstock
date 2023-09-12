@@ -28,6 +28,7 @@ requirements:
     - astropy >=4.0
     - matplotlib-base >=3.1
     - healsparse
+    - hpgeom
     - pyproj >=3.1
 
 test:
