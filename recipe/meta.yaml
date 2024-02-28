@@ -1,6 +1,6 @@
 {% set name = "skyproj" %}
-{% set version = "1.2.0" %}
-{% set sha256 = "10182313ea77f142f6ee6030f7c7e7a997c47f2e51539c4621a7dbb0346fba77" %}
+{% set version = "1.2.1" %}
+{% set sha256 = "4527be9dd7d278f00222181b8cb6744bc073671e6e1cd7b830ba12edbb5bc006" %}
 
 package:
   name: {{ name|lower }}
