@@ -1,6 +1,6 @@
 {% set name = "skyproj" %}
-{% set version = "1.2.3" %}
-{% set sha256 = "0167afc5c4ea17a35f2a2a78bb7e2babd4ea9c9aa7c98b3cbd5e3df0b38e4d9b" %}
+{% set version = "1.2.4" %}
+{% set sha256 = "ff224037034168d52d052e22276bd84a912dd2318925b21051ec14ea177acd04" %}
 
 package:
   name: {{ name|lower }}
@@ -12,21 +12,21 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - setuptools
-    - python >=3.7
+    - python >=3.9
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
-    - python >=3.7
+    - python >=3.9
     - numpy
     - astropy >=4.0
-    - matplotlib-base >=3.6
+    - matplotlib-base >=3.8
     - healsparse
     - hpgeom
     - pyproj >=3.1
