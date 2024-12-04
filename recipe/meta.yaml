@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=3.9
     - numpy
-    - astropy >=4.0
+    - astropy-base >=4.0
     - matplotlib-base >=3.8
     - healsparse
     - hpgeom
