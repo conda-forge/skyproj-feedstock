@@ -1,6 +1,6 @@
 {% set name = "skyproj" %}
-{% set version = "2.2.0" %}
-{% set sha256 = "1fbbbf8cf2c6ff92de7b6b59afb117de825d8ad6cc699e468987b7508cb1ab6c" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "7e777a292355039dde19ecc302c1356880738e2a9667a2c342f4e832a90f7f37" %}
 
 package:
   name: {{ name|lower }}
@@ -16,27 +16,34 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
+  build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
+    - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
+    - python
     - pip
     - setuptools
-    - python {{ python_min }}
     - setuptools_scm
     - setuptools_scm_git_archive
+    - numpy
+    - proj
   run:
-    - python >={{ python_min }}
+    - python
     - numpy
     - astropy-base >=4.0
     - matplotlib-base >=3.8
     - healsparse
     - hpgeom
-    - pyproj >=3.1
+    - proj
 
 test:
   imports:
     - skyproj
   requires:
     - pip
-    - python {{ python_min }}
   commands:
     - pip check
 
