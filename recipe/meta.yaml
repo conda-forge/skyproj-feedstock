@@ -1,6 +1,6 @@
 {% set name = "skyproj" %}
-{% set version = "2.3.0" %}
-{% set sha256 = "7e777a292355039dde19ecc302c1356880738e2a9667a2c342f4e832a90f7f37" %}
+{% set version = "2.4.1" %}
+{% set sha256 = "89fbed4e44b82822bb42324b72bd5d3b505106623c89aad47650e1a209b54d04" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
