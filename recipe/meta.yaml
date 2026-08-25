@@ -1,13 +1,13 @@
 {% set name = "skyproj" %}
-{% set version = "2.5.0" %}
-{% set sha256 = "cb8d5115927ca43cacdb6d92f00bb4fcc8563ee71028f755203ce1752e67c140" %}
+{% set version = "2.6.1" %}
+{% set sha256 = "0f41695c8c32b0773049e7c2c2e4f6f17afe28dfa7b1c997e35f036c45d8900f" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
